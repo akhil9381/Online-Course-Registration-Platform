@@ -506,3 +506,224 @@ section h2::after{
 ::-webkit-scrollbar-thumb:hover{
     background: #084298;
 }
+.course-card .btn,
+.faculty-card .btn{
+    border-radius: 50px;
+}
+
+.card-body{
+    position: relative;
+    z-index: 1;
+}
+
+.card{
+    position: relative;
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background: #0d6efd;
+    transition: 0.4s;
+}
+
+.card:hover::after{
+    width: 100%;
+}
+
+.card-title{
+    letter-spacing: 0.5px;
+}
+
+.card p{
+    line-height: 1.7;
+}
+
+.navbar-brand img{
+    transition: 0.5s;
+}
+
+.navbar-brand:hover img{
+    transform: rotate(10deg) scale(1.1);
+}
+
+footer{
+    overflow: hidden;
+}
+
+footer::after{
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.03);
+}
+
+footer .container{
+    position: relative;
+    z-index: 1;
+}
+
+.social-icon{
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.15);
+    transition: 0.3s;
+}
+
+.social-icon:hover::before{
+    top: 0;
+}
+
+.hero h1,
+.carousel-caption h2{
+    letter-spacing: 1px;
+}
+
+.hero p,
+.carousel-caption p{
+    letter-spacing: 0.5px;
+}
+
+.form-label{
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-check-label{
+    font-weight: 500;
+}
+
+input[type="file"]{
+    cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.table-hover tbody tr:hover{
+    background-color: rgba(13,110,253,0.05);
+}
+
+.accordion-item{
+    transition: 0.3s;
+}
+
+.accordion-item:hover{
+    transform: translateX(5px);
+}
+
+.carousel-indicators button{
+    transition: 0.3s;
+}
+
+.carousel-indicators .active{
+    transform: scale(1.3);
+}
+
+section h2,
+section h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary p{
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.card img{
+    cursor: pointer;
+}
+
+.card:hover img{
+    filter: brightness(1.05);
+}
+
+.navbar-nav .nav-item{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.btn-outline-primary:hover{
+    transform: translateY(-3px);
+}
+
+footer h5{
+    position: relative;
+    display: inline-block;
+}
+
+footer h5::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 40px;
+    height: 2px;
+    background: #0d6efd;
+}
+
+.card-body ul{
+    padding-left: 18px;
+}
+
+.card-body li{
+    margin-bottom: 6px;
+}
+
+.contact-info i{
+    transition: 0.3s;
+}
+
+.contact-info:hover i{
+    transform: scale(1.2);
+}
+
+.hero .btn,
+.carousel-caption .btn{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .btn::before,
+.carousel-caption .btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    transform: skewX(-25deg);
+    transition: 0.5s;
+}
+
+.hero .btn:hover::before,
+.carousel-caption .btn:hover::before{
+    left: 130%;
+}
