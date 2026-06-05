@@ -1,0 +1,251 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+section{
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    transition: all 0.3s ease;
+}
+
+.navbar-brand{
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.05);
+}
+
+.nav-link{
+    position: relative;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #0d6efd !important;
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: #0d6efd;
+    transition: 0.4s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.hero{
+    min-height: 90vh;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+    ),
+    url("../images/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h1{
+    animation: fadeInDown 1s ease;
+}
+
+.hero p{
+    animation: fadeInUp 1s ease;
+}
+
+.hero .btn{
+    animation: fadeInUp 1.3s ease;
+}
+
+.btn{
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.course-card{
+    border: none;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.course-card img{
+    transition: 0.5s;
+}
+
+.course-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+.course-card:hover img{
+    transform: scale(1.08);
+}
+
+.testimonial-card{
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.faculty-card{
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.faculty-card img{
+    transition: 0.5s;
+}
+
+.faculty-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+.faculty-card:hover img{
+    transform: scale(1.08);
+}
+
+.form-control,
+.form-select{
+    border-radius: 10px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color: #0d6efd;
+    box-shadow: 0 0 10px rgba(13,110,253,0.2);
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #0d6efd;
+    color: white;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.social-icon{
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover{
+    color: #0d6efd !important;
+    transform: translateY(-5px) scale(1.2);
+}
+
+footer{
+    margin-top: auto;
+}
+
+footer h5{
+    margin-bottom: 15px;
+}
+
+footer p{
+    margin-bottom: 5px;
+}
+
+.card{
+    border-radius: 15px;
+}
+
+.card img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 992px){
+    .hero h1{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 768px){
+    .hero{
+        min-height: 70vh;
+        text-align: center;
+    }
+
+    .hero h1{
+        font-size: 2.5rem;
+    }
+
+    .display-4{
+        font-size: 2rem;
+    }
+
+    .display-5{
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 576px){
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero p{
+        font-size: 0.95rem;
+    }
+
+    .btn-lg{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
